@@ -1,0 +1,7 @@
+@import "variables", "mixin", "font", "resset";
+
+.main-visible {
+  height: 100vh;
+}
+
+@import "main", "sub1";
