@@ -23,7 +23,7 @@
       content="http://www.mysite.com/article/article1.html"
     />
     <meta name="twitter:domain" content="사이트 명" />
-    <link rel="icon" href="./favicon.png" />
+    <link rel="icon" href="./pavicon.png" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -32,7 +32,7 @@
       rel="stylesheet"
       href="https://fonts.google.com/noto/specimen/Noto+Sans+KR?query=noto+sans"
     />
-    <link rel="stylesheet" href="./assets/css/comm.css" />
+    <link rel="stylesheet" href="./assets/css/comm.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script defer src="./assets/js/comm.js"></script>
   </head>
@@ -48,152 +48,157 @@
       <main id="main">
         <div class="swiper main-visible">
           <div class="swiper-wrapper">
-            <div class="swiper-slide1">slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide slide-1">
+              <img
+                src="./포트폴리오 준비-이가영/main-images/flp-moncler-collection-06nov-hero-banner-slim-desk.webp"
+                alt="메인베너"
+                />
+              <div class="banner-textbox">
+                  <div class="headline-txt">
+                    <p class="headline-txt1">2023 홀리데이 시즌</p>
+                    <p class="headline-txt2">기프트 가이드 만나보기</p>
+                  </div>
+                  <div class="txt-btn">
+                    <a href="#">남성</a>
+                    <a href="#">여성</a>
+                  </div>
+              </div>
+            </div>
+            <div class="swiper-slide slide-2" >
+              <img src="./포트폴리오 준비-이가영/main-images/메인베너2.webp" alt="">
+              <div class="banner-textbox">
+                  <span class="headline2-txt1">겨울을 향한 사랑</span>
+                  <div class="txt-btn">
+                    <a href="#">컬렉션보러가기</a>
+                  </div>
+              </div>
+              </div>
           </div>
 
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
+          <div class="banner-swiper-button-next"></div>
+          <div class="banner-swiper-button-prev"></div>
+          <div class="banner-swiper-pagination"></div>
         </div>
 
         <!--main-section2-->
         <div class="main-product-box2">
           <div class="main-product-tit-box">
-            <h2>new arrivals</h2>
-            <div>
-              <div><a href="#">shop women</a></div>
-              <div><a href="#">shop men</a></div>
+            <h2 class="section2-h2">New Arrivals</h2>
+            <div class="tit-box-select">
+              <a href="#">shop women</a>
+              <a href="#">shop men</a>
             </div>
           </div>
           <!---->
-          <div class="main-product-list-swiper">
-            <div class="flicking-viewport">
-              <div class="flicking-camera">
-                <!--product-info1-->
-                <div class="product">
-                  <a href="#">
-                    <div class="product-img"></div>
-                    <div class="product-info">
-                      <div class="product-select-color">
-                        <div class="product-color-count">1색상</div>
-                      </div>
-                      <div class="product-name">패딩 카디건</div>
-                      <div class="product-attr">
-                        <span>신상품</span>
-                        <span>베스트셀러</span>
-                      </div>
-                      <div class="product-price">"₩1,660,000"</div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <!--product-info2-->
-              <div class="product">
+
+          <div class="swiper shopping-list">
+            <div class="swiper-wrapper">                         
+                <div class="swiper-slide list-slide">
                 <a href="#">
-                  <div class="product-img"></div>
+                  <img src="./포트폴리오 준비-이가영/main-images/패딩-카디건.webp" alt="이미지">
                   <div class="product-info">
                     <div class="product-select-color">
-                      <div class="product-color-count">3색상</div>
+                      <div class="product-color-count">1색상</div>
                     </div>
-                    <div class="product-name">패딩 집업 스웨트셔츠</div>
+                    <div class="product-name">패딩 카디건</div>
                     <div class="product-attr">
                       <span>신상품</span>
                       <span>베스트셀러</span>
                     </div>
-                    <div class="product-price">₩1,800,000</div>
+                    <div class="product-price">"₩1,660,000"</div>
                   </div>
                 </a>
               </div>
-              <!-- product-info3 -->
-              <div class="product">
-                <div class="product-img"></div>
+            
+            <div class="swiper-slide">              
+              <a href="#">
+                <img src="./포트폴리오 준비-이가영/main-images/패딩-울-카디건.webp" alt="이미지">
                 <div class="product-info">
                   <div class="product-select-color">
-                    <label for="product-color"></label>
-                    <div class="product-color-count">1색상</div>
+                    <div class="product-color-count">3색상</div>
                   </div>
-                  <a href="#">
-                    <div class="product-name">패디드 울&벨벳 카디건</div>
-                    <div class="product-attr">
-                      <span>신상품</span>
-                      <span>베스트셀러</span>
-                    </div>
-                    <div class="product-price">₩1,920,000</div>
-                  </a>
-                </div>
-              </div>
-              <!--product-info4-->
-              <div class="product">
-                <div class="product-img"></div>
-                <div class="product-info">
-                  <div class="product-select-color">
-                    <label for="product-colocr"></label>
-                    <div class="product-color-count">1색상</div>
+                  <div class="product-name">패딩 집업 스웨트셔츠</div>
+                  <div class="product-attr">
+                    <span>신상품</span>
+                    <span>베스트셀러</span>
                   </div>
-                  <a href="#">
-                    <div class="product-name">스트라이프 울 스웨터</div>
-                    <div class="product-attr">
-                      <span>신상품</span>
-                      <span>베스트셀러</span>
-                    </div>
-                    <div class="product-price">"₩1,600,000"</div>
-                  </a>
+                  <div class="product-price">₩1,800,000</div>
                 </div>
-              </div>
-              <!--product-info5-->
-              <div class="product">
-                <div class="product-img"></div>
-                <div class="product-info">
-                  <div class="product-select-color">
-                    <label for="product-colocr"></label>
-                    <div class="product-color-count">1색상</div>
+              </a>
+            </div>          
+            <div class="swiper-slide">
+              <a href="#">      
+              <img src="./포트폴리오 준비-이가영/main-images/패디드-울-and-벨벳-카디건.webp" alt="이미지">
+              <div class="product-info">
+                <div class="product-select-color">                  
+                  <div class="product-color-count">1색상</div>
+                </div>                
+                  <div class="product-name">패디드 울&벨벳 카디건</div>
+                  <div class="product-attr">
+                    <span>신상품</span>
+                    <span>베스트셀러</span>
                   </div>
-                  <a href="#">
-                    <div class="product-name">스트라이프 울 스웨터</div>
-                    <div class="product-attr">
-                      <span>신상품</span>
-                      <span>베스트셀러</span>
-                    </div>
-                    <div class="product-price">"₩1,600,000"</div>
-                  </a>
+                  <div class="product-price">₩1,920,000</div>
                 </div>
-              </div>
-              <!--product-info6-->
-              <div class="product">
-                <div class="product-img"></div>
-                <div class="product-info">
-                  <div class="product-select-color">
-                    <label for="product-colocr"></label>
-                    <div class="product-color-count">1색상</div>
+                </a>
+              </div>            
+          
+            <div class="swiper-slide">             
+              <img src="./포트폴리오 준비-이가영/main-images/스트라이프-울-스웨터.webp" alt="이미지">
+              <div class="product-info">
+                <div class="product-select-color">
+                  <label for="product-colocr"></label>
+                  <div class="product-color-count">1색상</div>
+                </div>
+                <a href="#">
+                  <div class="product-name">스트라이프 울 스웨터</div>
+                  <div class="product-attr">
+                    <span>신상품</span>
+                    <span>베스트셀러</span>
                   </div>
-                  <a href="#">
-                    <div class="product-name">스트라이프 울 스웨터</div>
-                    <div class="product-attr">
-                      <span>신상품</span>
-                      <span>베스트셀러</span>
-                    </div>
-                    <div class="product-price">"₩1,600,000"</div>
-                  </a>
-                </div>
+                  <div class="product-price">"₩1,600,000"</div>                
               </div>
-            </div>
-            <!--flicking-camera-->
+             </a>
+            </div>         
+            <div class="swiper-slide">              
+                <a href="#">
+              <img src="./포트폴리오 준비-이가영/main-images/legere-크로스-백.webp" alt="">
+              <div class="product-info">
+                <div class="product-select-color">
+                  <label for="product-colocr"></label>
+                  <div class="product-color-count">1색상</div>
+                </div>                
+                  <div class="product-name">스트라이프 울 스웨터</div>
+                  <div class="product-attr">
+                    <span>신상품</span>
+                    <span>베스트셀러</span>
+                  </div>
+                  <div class="product-price">"₩1,600,000"</div>
+                  </div>
+                </a>              
+            </div>          
+            <div class="swiper-slide">
+              <a href="#">             
+              <img src="./포트폴리오 준비-이가영/main-images/hockey-로고-티셔츠 (2).webp" alt="">
+              <div class="product-info">
+                <div class="product-select-color"                                
+                  <div class="product-color-count">1색상</div>                                
+                  <div class="product-name">스트라이프 울 스웨터</div>
+                  <div class="product-attr">
+                    <span>신상품</span>
+                    <span>베스트셀러</span>
+                  </div>
+                  <div class="product-price">"₩1,600,000"</div>
+                </div>
+                </a>
+              </div>
+              </div>
+            <div class="list-swiper-pagination"></div>
+            <div class="list-swiper-button-next"></div>
+            <div class="list-swiper-button-prev"></div>             
           </div>
-          <!--flicking-viewport-->
-        </div>
-        <!--main-product-list-swiper-->
-        <!--main-product-box2-->
-
-        <!---->
-
+          </div>
+                                                                                                    
         <div>
           <div class="main-product-box3">
             <div class="main-product-tit-box2">

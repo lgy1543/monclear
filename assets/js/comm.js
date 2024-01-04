@@ -1,13 +1,27 @@
-var swiper = new Swiper(".main-visible", {
+var mainSwiper = new Swiper(".main-visible", {
   slidesPerView: 1,
-  spaceBetween: 30,
+  // spaceBetween: 30,
   loop: true,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".banner-swiper-pagination",
     clickable: true,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".banner-swiper-button-next",
+    prevEl: ".banner-swiper-button-prev",
   },
+});
+
+var listswiper = new Swiper(".shopping-list", {
+  slidesPerView: 1.5,
+  spaceBetween: 10,
+  pagination: {
+    el: ".list-swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".list-swiper-button-next",
+    prevEl: ".list-swiper-button-prev",
+  },
+
 });
