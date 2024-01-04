@@ -368,7 +368,7 @@ legend {
   margin: 50px 0 0 10px;
 }
 .main-product-box2 .shopping-list {
-  width: 60%;
+  flex-grow: 6;
   height: auto;
 }
 .main-product-box2 .shopping-list img {
@@ -378,7 +378,7 @@ legend {
      object-fit: cover;
 }
 .main-product-box2 .main-product-tit-box {
-  width: 40%;
+  flex-grow: 4;
   padding: 0 20px;
 }
 .main-product-box2 .main-product-tit-box .section2-h2 {
@@ -389,16 +389,43 @@ legend {
   margin-top: 65px;
 }
 .main-product-box2 .main-product-tit-box .tit-box-select a {
+  display: inline-block;
+  width: 90px;
+  padding: 6px 0;
   background: #000;
-  height: 35px;
-  width: 100px;
-  font-size: 12px;
   color: #fff;
+  font-size: 12px;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 50px;
 }
 
-/* 세번째 메인섹션 *//*# sourceMappingURL=comm.css.map */
+/* 세번째 메인섹션 */
+.main-product-box3 {
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-product-box3 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+.main-product-box3 .main-product-tit-box2 {
+  text-align: center;
+  position: absolute;
+  z-index: 20;
+}
+.main-product-box3 .main-product-tit-box2 a {
+  display: inline-block;
+  width: 90px;
+  padding: 6px 0;
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+}/*# sourceMappingURL=comm.css.map */

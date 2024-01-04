@@ -84,3 +84,13 @@
     left: $l;
     right: $r;
   }
+
+ 
+  @mixin btn-blk {
+      display: inline-block;
+      width: 90px;
+      padding: 6px 0;
+      background: $black;
+      color: $white;
+      font-size: $font-size3;
+     }
