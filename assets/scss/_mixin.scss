@@ -94,3 +94,12 @@
       color: $white;
       font-size: $font-size3;
      }
+
+     @mixin btn-wht {
+      display: inline-block;
+      width: 90px;
+      padding: 6px 0;
+      background: $white;
+      color: $black;
+      font-size: $font-size3;
+     }

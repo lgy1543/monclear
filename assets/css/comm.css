@@ -428,4 +428,86 @@ legend {
   background: #000;
   color: #fff;
   font-size: 12px;
+}
+
+/*네번째 메인 섹션*/
+/*각자 이미지 포지션*/
+.listbox-image1 img {
+  -o-object-position: 0 0;
+     object-position: 0 0;
+}
+
+.listbox-image2 img {
+  -o-object-position: 59% 0;
+     object-position: 59% 0;
+}
+
+.listbox-image3 img {
+  -o-object-position: 70% 0;
+     object-position: 70% 0;
+}
+
+.listbox-image4 img {
+  -o-object-position: 0% 100%;
+     object-position: 0% 100%;
+}
+
+/*공통 코드*/
+.listbox-wrapper {
+  margin: 50px 30px 0 30px;
+  position: relative;
+}
+.listbox-wrapper img {
+  width: 100%;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.listbox-wrapper .main-list-txt-box {
+  z-index: 30;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  max-width: 100%;
+}
+.listbox-wrapper .main-list-txt-box a {
+  display: inline-block;
+  width: 90px;
+  padding: 6px 0;
+  background: #fff;
+  color: #000;
+  font-size: 12px;
+  text-align: center;
+}
+.listbox-wrapper .main-list-txt-box h3 {
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.listbox-wrapper .main-list-txt-box .list-btn {
+  display: flex;
+  gap: 10px;
+}
+
+.collection-inpage-component {
+  position: relative;
+  margin-top: 50px;
+  width: 100%;
+}
+.collection-inpage-component img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 72% 0;
+     object-position: 72% 0;
+}
+.collection-inpage-component .collection-inpage-inner-container {
+  position: absolute;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=comm.css.map */
