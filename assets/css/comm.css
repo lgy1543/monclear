@@ -503,11 +503,15 @@ legend {
   -o-object-position: 72% 0;
      object-position: 72% 0;
 }
-.collection-inpage-component .collection-inpage-inner-container {
+.collection-inpage-component .collection-inner-container {
   position: absolute;
+  z-index: 40;
   text-align: center;
+  top: 0%;
+  right: 0%;
+  transform: translate(-50%, 50%);
+}
+.collection-inpage-component .collection-txt-box {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }/*# sourceMappingURL=comm.css.map */

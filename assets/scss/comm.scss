@@ -237,16 +237,18 @@
     object-fit: cover;
     object-position: 72% 0;  
   }
-  .collection-inpage-inner-container{
-    position: absolute;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   
-
-  }
+ .collection-inner-container{
+  position: absolute;
+  z-index: 40; 
+  text-align: center;
+  top: 0%;
+  right: 0%;
+  transform: translate(-50%,50%);
+ }
+ .collection-txt-box{
+  display:flex;
+  flex-direction: column;
+ }
 }
 
 
