@@ -1,0 +1,274 @@
+@import "variables", "mixin", "font", "resset";
+
+#wrap {
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+/* 첫번째 메인베너&스와이퍼 페이지네이션*/
+.main-visible {
+  .slide-1 {
+    position: relative;
+    img {
+      object-position: 47% 0;
+    }
+  }
+  .slide-2 img {
+    object-position: 61% 0;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+    padding-bottom: 10%;
+  }
+  .swiper-pagination-bullet {
+    border-radius: 10%;
+    width: 65px;
+    height: 2px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+}
+
+/* 메인베너텍스트박스 */
+
+.banner-textbox {
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 1;
+  bottom: 106px;
+  left: 50%;
+  white-space: nowrap;
+  /* padding-top: 50px; */
+  text-align: center;
+}
+
+.headline-txtbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headline-txt {
+  flex-direction: column;
+  max-width: 100%;
+  color: $white;
+}
+
+.headline-txt2 {
+  font-size: $font-size2;
+  line-height: 60.8px;
+}
+/* 버튼 */
+.txt-btn {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+.txt-btn a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: $white;
+  color: $black;
+}
+
+/* 메인베너텍스트박스2*/
+
+.banner-textbox2 {
+  width: 375px;
+  transform: translate(0, -300px);
+  position: relative;
+  z-index: 1;
+}
+.headline-txtbox2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.headline2-txt1 {
+  padding-bottom: 10px;
+  color: $white;
+  font-size: $font-size2;
+  line-height: 60.8px;
+}
+
+/* 두번째 메인섹션 */
+
+.main-product-box2 {
+  max-width: 100%;
+  display: flex;
+  position: relative;
+  margin: 50px 0 0 10px;
+
+  .shopping-list {
+    flex-grow: 6;
+    height: auto;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .main-product-tit-box {
+    flex-grow: 4;
+    padding: 0 20px;
+
+    .section2-h2 {
+      font-size: $font-size2;
+      line-height: 48px;
+    }
+    .tit-box-select {
+      margin-top: 65px;
+      a {
+        @include btn-blk;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+/* 세번째 메인섹션 */
+.main-product-box3 {
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+  }
+  .main-product-tit-box2 {
+    text-align: center;
+    position: absolute;
+    z-index: 20;
+    a {
+      @include btn-blk;
+    }
+  }
+}
+
+/*네번째 메인 섹션*/
+
+/*각자 이미지 포지션*/
+.listbox-image1 img {
+  object-position: 0 0;
+}
+.listbox-image2 img {
+  object-position: 59% 0;
+}
+.listbox-image3 img {
+  object-position: 70% 0;
+}
+.listbox-image4 img {
+  object-position: 0% 100%;
+}
+
+/*공통 코드*/
+.listbox-wrapper {
+  margin: 50px 30px 0 30px;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+  }
+  .main-list-txt-box {
+    z-index: 30;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    max-width: 100%;
+
+    a {
+      @include btn-wht;
+      text-align: center; //section마다 달라서 각section별도 적용
+    }
+    h3 {
+      color: $white;
+      font-size: $font-size2;
+      margin-bottom: 10px;
+    }
+    .list-btn {
+      display: flex;
+      gap: 10px;
+    }
+  }
+}
+
+// 다섯번째 메인섹션
+.collection-inpage-component {
+  position: relative;
+  margin-top: 50px;
+  width: 100%;
+  img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 72% 0;
+  }
+  .collection-inner-container {
+    top: 0%;
+    left: 0%;
+    transform: translate(50%, 50%);
+    z-index: 20;
+    position: absolute;
+    a {
+      text-align: center;
+    }
+  }
+  .collection-txt-box {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.collection-inner-container h2 {
+  color: $white;
+  margin-bottom: 12px;
+  @include SemiBold-24;
+}
+.collection-txt-box a {
+  color: $white;
+  margin-bottom: 12px;
+}
+//pc버전 동적구현css
+// .sec5-a {
+//   transition: transform 0.3s ease-in-out;
+// }
+// .sec5-a:hover {
+//   transform: scale(1.2);
+// }
+
+.main-human-box {
+  width: 100%;
+  img {
+    width: 430px;
+    height: 740px;
+  }
+}

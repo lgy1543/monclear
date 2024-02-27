@@ -269,8 +269,8 @@ legend {
      object-position: 47% 0;
 }
 .main-visible .slide-2 img {
-  -o-object-position: 50% 0;
-     object-position: 50% 0;
+  -o-object-position: 61% 0;
+     object-position: 61% 0;
 }
 .main-visible .swiper-slide img {
   display: block;
@@ -279,7 +279,10 @@ legend {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.main-visible .swiper-horizontal > .swiper-pagination-bullets, .main-visible .swiper-pagination-bullets.swiper-pagination-horizontal, .main-visible .swiper-pagination-custom, .main-visible .swiper-pagination-fraction {
+.main-visible .swiper-horizontal > .swiper-pagination-bullets,
+.main-visible .swiper-pagination-bullets.swiper-pagination-horizontal,
+.main-visible .swiper-pagination-custom,
+.main-visible .swiper-pagination-fraction {
   position: absolute;
   z-index: 10;
   text-align: center;
@@ -504,14 +507,37 @@ legend {
      object-position: 72% 0;
 }
 .collection-inpage-component .collection-inner-container {
-  position: absolute;
-  z-index: 40;
-  text-align: center;
   top: 0%;
-  right: 0%;
-  transform: translate(-50%, 50%);
+  left: 0%;
+  transform: translate(50%, 50%);
+  z-index: 20;
+  position: absolute;
+}
+.collection-inpage-component .collection-inner-container a {
+  text-align: center;
 }
 .collection-inpage-component .collection-txt-box {
   display: flex;
   flex-direction: column;
+}
+
+.collection-inner-container h2 {
+  color: #fff;
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+}
+
+.collection-txt-box a {
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.main-human-box {
+  width: 100%;
+}
+.main-human-box img {
+  width: 430px;
+  height: 740px;
 }/*# sourceMappingURL=comm.css.map */
