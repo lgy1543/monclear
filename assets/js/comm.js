@@ -13,7 +13,7 @@ var mainSwiper = new Swiper(".main-visible", {
 });
 
 var listswiper = new Swiper(".shopping-list", {
-  slidesPerView: 1.5,
+  slidesPerView: 1.3,
   spaceBetween: 10,
   pagination: {
     el: ".list-swiper-pagination",
@@ -23,5 +23,10 @@ var listswiper = new Swiper(".shopping-list", {
     nextEl: ".list-swiper-button-next",
     prevEl: ".list-swiper-button-prev",
   },
+  breakpoints: {
+    431:{
+      slidesPerView: 4,
+    },
+  }
 
 });

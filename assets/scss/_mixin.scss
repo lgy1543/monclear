@@ -87,23 +87,29 @@
 
 @mixin btn-blk {
   display: inline-block;
-  width: 90px;
-  padding: 6px 0;
+  width: 100px;
+  padding: 10px 10px;
   background: $black;
   color: $white;
-  font-size: $font-size3;
+  font-size: 16px;
+  border-radius: 2.5%;
 }
 
 @mixin btn-wht {
   display: inline-block;
   width: 90px;
-  padding: 6px 0;
+  padding: 10px 10px;
   background: $white;
   color: $black;
-  font-size: $font-size3;
+  @include Regular-13;
 }
 
 // 폰트 설정
+@mixin bold-54 {
+  font-size: 5.4rem;
+  line-height: 6.4rem;
+  letter-spacing: 0.015em;
+}
 
 @mixin Bold-48 {
   font-size: 3rem;
