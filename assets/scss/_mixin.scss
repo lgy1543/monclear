@@ -84,7 +84,7 @@
   left: $l;
   right: $r;
 }
-
+// 버튼-mob
 @mixin btn-blk {
   display: inline-block;
   width: 100px;
@@ -103,14 +103,40 @@
   color: $black;
   @include Regular-13;
 }
-
-// 폰트 설정
-@mixin bold-54 {
-  font-size: 5.4rem;
-  line-height: 6.4rem;
-  letter-spacing: 0.015em;
+//버튼-pc
+@mixin btn-blk-pc {
+  text-align: center;
+  display: inline-block;
+  width: 100px;
+  padding: 14px 22px;
+  background: $black;
+  color: $white;
+  font-size: 16px;
+  border-radius: 2.5%;
+}
+@mixin btn-wht-pc {
+  display: inline-block;
+  width: 100px;
+  padding: 14px 22px;
+  background: $white;
+  color: $black;
+  font-size: 16px;
+  border-radius: 2.5%;
+  opacity: 0.9;
 }
 
+// 폰트 설정
+@mixin bold-72 {
+  font-size: 4.5rem;
+  line-height: 6.4rem;
+  letter-spacing: 0.015em;
+  opacity: 0.9;
+}
+@mixin bol-60 {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 400;
+}
 @mixin Bold-48 {
   font-size: 3rem;
   font-weight: 700;

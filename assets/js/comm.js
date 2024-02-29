@@ -30,3 +30,4 @@ var listswiper = new Swiper(".shopping-list", {
   }
 
 });
+
